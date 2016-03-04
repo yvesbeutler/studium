@@ -2,6 +2,7 @@ package ch.yvesbeutler.maths;
 
 /**
  * @author yvesbeutler
+ * @since 04.03.2016
  * Task: Which of the following s loops computes this sum [pi^2/6]?
  */
 public class ArithmeticExceptions {

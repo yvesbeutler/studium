@@ -4,6 +4,7 @@ import java.util.Random;
 
 /**
  * @author yvesbeutler
+ * @since 04.03.2016
  * Write a program that computes the product of twho square matrices of boolean values, using the or operation
  * instead of + and the and operation instead of *. The size of the matrices depend on the integer value you
  * pass as an argument.

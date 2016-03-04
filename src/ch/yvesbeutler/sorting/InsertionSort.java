@@ -2,6 +2,7 @@ package ch.yvesbeutler.sorting;
 
 /**
  * @author yvesbeutler
+ * @since 04.03.2016
  * This example shows how to sort an array of numbers with the insertion sort algorithm
  */
 public class InsertionSort {

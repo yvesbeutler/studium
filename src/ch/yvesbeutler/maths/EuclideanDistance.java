@@ -2,6 +2,7 @@ package ch.yvesbeutler.maths;
 
 /**
  * @author Dario Carosella
+ * @since 04.03.2016
  * Given two vectors of length N that are represented with one-dimensional arrays, write a code fragment that
  * computes the Euclidean distance between them (the square core of the sums of the squares of the differences
  * between corresponding entries).

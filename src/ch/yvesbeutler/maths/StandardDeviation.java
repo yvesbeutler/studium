@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * @author Samuel Ackermann
+ * @since 04.03.2016
  * Write a program Stats.java that takes an integer N from the command line, reads N double values from standard
  * input, and prints their mean (average value) and sample standard deviation (square core of the sum of the squares
  * of their differences from the average, divided by N - 1).
