@@ -2,6 +2,7 @@ package ch.yvesbeutler.sorting;
 
 /**
  * @author yvesbeutler
+ * @since 04.03.2016
  * This sample deals with bit operations like bit shifting and complements
  */
 public class BitShifting {

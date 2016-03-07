@@ -2,6 +2,7 @@ package ch.yvesbeutler.recursion;
 
 /**
  * @author yvesbeutler
+ * @since 04.03.2016
  * This examples demonstrate how recursive functions work. Every recursive function needs at
  * least one base case, which terminates the function.
  */
@@ -17,7 +18,6 @@ public class Recursion {
         System.out.println("faculty:\t" + faculty(INPUT));
         System.out.println("fibonacci:\t" + fibonacci(INPUT));
         System.out.println("multiply:\t" + multiply(INPUT, INPUT2));
-        System.out.println("ackermann:\t" + ackermann(INPUT, INPUT2));
     }
 
     /**
@@ -48,17 +48,4 @@ public class Recursion {
         return (m < 1) ? 0 : n + multiply(m-1, n);
     }
 
-    /**
-     * ackermann-function
-     */
-    private static int ackermann(int m, int n) {
-        if (m == 0) {
-            return n + 1;
-        } else if (n == 0) {
-            return ackermann(m-1, 1);
-        } else {
-            // perforce (m > 0) && (n > 0)
-            return ackermann(m-1, ackermann(m,n-1));
-        }
-    }
 }
