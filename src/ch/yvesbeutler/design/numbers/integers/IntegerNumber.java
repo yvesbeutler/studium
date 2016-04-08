@@ -59,6 +59,12 @@ public final class IntegerNumber implements AdditiveGroup<IntegerNumber>,
     }
 
     public final IntegerNumber plus(IntegerNumber il, IntegerNumber ir) {
+        if (il.isPos() && ir.isPos() || il.isNeg() && ir.isNeg()) {
+            return new IntegerNumber(il.getSign(), ZERO.plus(il.getAbs(), ir.getAbs()));
+        } else {
+
+            // do some magic!
+        }
         return null;
     }
 

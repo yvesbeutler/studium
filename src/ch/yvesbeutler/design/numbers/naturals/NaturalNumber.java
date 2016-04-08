@@ -25,11 +25,7 @@ public abstract class NaturalNumber implements AdditiveMonoid<NaturalNumber>,
     }
 
     public final NaturalNumber times(NaturalNumber nl, NaturalNumber nr) {
-        if (nr.isZero()) {
-            return new Zero();
-        } else {
-            return plus(nl, times(nr.getPred(), nl));
-        }
+        return (nr.isZero()) ? new Zero() : plus(nl, times(nr.getPred(), nl));
     }
 
     public final boolean leq(NaturalNumber nl, NaturalNumber nr) {
