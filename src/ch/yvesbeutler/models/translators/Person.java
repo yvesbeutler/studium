@@ -1,10 +1,9 @@
-package ch.yvesbeutler.streams.model;
+package ch.yvesbeutler.models.translators;
 
 import java.util.List;
 
 /**
- * @author yves.beutler
- * @since 12.04.2016
+ * @author yvesbeutler
  * This class represents a person which has an age and can speak several languages.
  */
 public class Person implements Comparable<Person> {

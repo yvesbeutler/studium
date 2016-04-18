@@ -1,13 +1,13 @@
 package ch.yvesbeutler.streams;
 
-import ch.yvesbeutler.streams.model.Language;
-import ch.yvesbeutler.streams.model.Person;
+import ch.yvesbeutler.models.translators.Language;
+import ch.yvesbeutler.models.translators.Person;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author yves.beutler
+ * @author yvesbeutler
  * This class demonstrates how Java 8 streams work with an example of an translation office which has
  * several employees who can speak different languages.
  */

@@ -1,14 +1,14 @@
 package ch.yvesbeutler.streams;
 
-import ch.yvesbeutler.streams.model.Author;
-import ch.yvesbeutler.streams.model.Book;
+import ch.yvesbeutler.models.library.Author;
+import ch.yvesbeutler.models.library.Book;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author yves.beutler
+ * @author yvesbeutler
  * This class demonstrates how Java 8 streams work with an example of an simple library including
  * books and their authors.
  */

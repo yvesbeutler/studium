@@ -49,9 +49,9 @@ class Main {
     }
 
     //Übung 3
-    public static <arr> void change(int id1, int id2, arr[] array){
+    public static <T> void change(int id1, int id2, T[] array){
 
-        arr a = array[id1];
+        T a = array[id1];
         array[id1] = array[id2];
         array[id2] = a;
     }

@@ -1,4 +1,4 @@
-package ch.yvesbeutler.streams.model;
+package ch.yvesbeutler.models.library;
 
 public class Book {
 
