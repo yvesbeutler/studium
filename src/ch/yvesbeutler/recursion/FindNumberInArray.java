@@ -5,38 +5,25 @@ import java.util.Arrays;
 /**
  * @author yvesbeutler
  * @since 04.03.2016
+ * This class uses divide & conquer to find a certain number in an array.
  */
 public class FindNumberInArray {
 
-    private static int NUMBER = 7;
+    private static int NUMBER = 4;
     private static int[] ARRAY = {1, 3, 6, 3, 7, 9, 5, 6, 9};
 
     public static void main(String[] args) {
-        findNumberInArray(NUMBER, ARRAY);
+        System.out.println("is " + NUMBER + " in array: " + findNumberInArray(NUMBER, ARRAY));
     }
 
     private static boolean findNumberInArray(int n, int[] array) {
-
-        // TODO: finish this example of divide and conquer
-
         if (array.length == 1) {
             return array[0] == n;
         } else {
-            Arrays.copyOfRange(array, 0, array.length + 1 / 2);
-//            return findNumberInArray(n, )
+            int middle = array.length / 2;
+            return findNumberInArray(n, Arrays.copyOfRange(array, 0, middle)) ||
+                    findNumberInArray(n, Arrays.copyOfRange(array, middle, array.length));
+
         }
-
-//        return (array.length == 1) ? array[0] == n :
-
-        return true;
     }
-
-//    Boolean isIn(Number x, Array a) {
-//
-//        n = a.size
-//        if n==1 then return a[0]==x
-//        else
-//        return isIn(x, a[0:n/2]) or isIn(x,a[n/2:n])
-//    }
-
 }
