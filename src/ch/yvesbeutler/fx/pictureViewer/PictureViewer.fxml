@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<SplitPane dividerPositions="0.8542713567839196" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.yvesbeutler.fx.pictureViewer.Launcher">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="598.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="btnPrevious" layoutX="123.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="25.0" text="&lt;" />
+            <Button fx:id="btnNext" layoutX="460.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="25.0" text="&gt;" />
+            <Pane fx:id="imgPanel1" layoutX="148.0" prefHeight="55.0" prefWidth="78.0" />
+            <Pane fx:id="imgPanel2" layoutX="226.0" prefHeight="55.0" prefWidth="78.0" />
+            <Pane fx:id="imgPanel3" layoutX="304.0" prefHeight="55.0" prefWidth="78.0" />
+            <Pane fx:id="imgPanel4" layoutX="382.0" prefHeight="55.0" prefWidth="78.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
