@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ch.yvesbeutler.sed.design.stopwatch</OriginalElement>
+  <nodes>
+    <node x="712.5" y="182.0">ch.yvesbeutler.sed.design.stopwatch.State</node>
+    <node x="240.5" y="353.5">ch.yvesbeutler.sed.design.stopwatch.Stopwatch</node>
+    <node x="998.5" y="155.0">ch.yvesbeutler.sed.design.stopwatch.impl.Running</node>
+    <node x="-24.0" y="448.5">ch.yvesbeutler.sed.design.stopwatch.App</node>
+    <node x="638.5" y="-5.0">ch.yvesbeutler.sed.design.stopwatch.impl.Idle</node>
+    <node x="638.5" y="555.0">ch.yvesbeutler.sed.design.stopwatch.impl.Intermediate</node>
+    <node x="283.5" y="688.5">ch.yvesbeutler.sed.design.stopwatch.Display</node>
+    <node x="278.5" y="155.0">ch.yvesbeutler.sed.design.stopwatch.StopwatchEventHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.impl.Intermediate" target="ch.yvesbeutler.sed.design.stopwatch.State">
+      <point x="0.0" y="-45.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.Stopwatch" target="ch.yvesbeutler.sed.design.stopwatch.StopwatchEventHandler">
+      <point x="0.0" y="-126.5" />
+      <point x="0.0" y="45.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.State" target="ch.yvesbeutler.sed.design.stopwatch.StopwatchEventHandler">
+      <point x="-47.5" y="0.0" />
+      <point x="121.5" y="0.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.App" target="ch.yvesbeutler.sed.design.stopwatch.Stopwatch">
+      <point x="104.0" y="0.0" />
+      <point x="-159.5" y="0.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.impl.Idle" target="ch.yvesbeutler.sed.design.stopwatch.State">
+      <point x="0.0" y="45.0" />
+      <point x="0.0" y="-18.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.Stopwatch" target="ch.yvesbeutler.sed.design.stopwatch.Display">
+      <point x="0.0" y="126.5" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.Stopwatch" target="ch.yvesbeutler.sed.design.stopwatch.State">
+      <point x="159.5" y="0.0" />
+      <point x="720.0" y="480.0" />
+      <point x="-40.0" y="18.0" />
+    </edge>
+    <edge source="ch.yvesbeutler.sed.design.stopwatch.impl.Running" target="ch.yvesbeutler.sed.design.stopwatch.State">
+      <point x="-121.5" y="0.0" />
+      <point x="47.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="324.0" y="267.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
